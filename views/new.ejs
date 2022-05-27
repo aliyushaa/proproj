@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <script src="https://cdn.tiny.cloud/1/vu10uto53uni2e2stza4sum7h44d4k63m9nqtrf3piiw6kwu/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea'
+        });
+    </script>
+    <title>Catalog of the shop</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="mb-4 text-black" style="padding: 15px !important;">New products</h1>
+
+        <form action="/blogs" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+
+                <label for="title" class="text-black">Name of the product</label>
+                <input type="text" class="form-control" placeholder="Name of the product" name="title" required>
+            </div>
+
+            <div class="form-group">
+
+                <label for="author" class="text-black">Company name </label>
+                <input type="text" class="form-control" placeholder="The brand name" name="author" required>
+            </div>
+            <div class="form-group">
+
+                <label for="description" class="text-black"> Description of the product </label>
+                <textarea name="description" placeholder="Description of the product " class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="image" class="text-black">Upload image</label>
+                <input type="file" name="image" id="image" placeholder="put image" class="form-control-file text-black">
+            </div>
+
+            <div class="form-group">
+                <a href="/" class="btn btn-warning" style="background-color: bisque !important; color: black !important;">Cancel</a>
+                <button type="submit" class="btn btn-primary" style="background-color: aqua !important; color: black !important;">Save</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

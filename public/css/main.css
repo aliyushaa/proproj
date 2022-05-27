@@ -1,0 +1,10 @@
+body {
+  background: white !important;
+  font-family: 'Koulen', cursive !important;
+
+}
+.card-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
